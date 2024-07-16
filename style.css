@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.headersection{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(196, 204, 204);
+    z-index: 100;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.headingtext{
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 10px;
+}
+.navlist{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+.navlist a{
+    text-decoration: none;
+    color: initial;
+    transition: all ease-in 0.2s;
+}
+a:hover{
+    color: white;
+    
+}
+.navlist li{
+    padding: 5px 5px;
+    list-style: none;
+    font-weight: 600;
+    font-size: 1.2rem; 
+}
+.herosectioncontainer{
+    background-color: #e3eaea;
+    /* color: white; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.herosectioncontainer .textcontainer{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 40px; */
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.textcontainer h1{
+    text-align: left;
+    font-size: 4.5rem;
+}
+.textcontainer h3{
+    text-align: left;
+    font-size: 2rem;
+}
+.textcontainer p{
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.herosectioncontainer .imgcontainer{
+    width: 45%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgcontainer img{
+    width: 80%;
+    /* height: 60%; */
+    background-size: cover;
+    mix-blend-mode:multiply   
+}
+
+.buttons{
+    display: flex;
+    gap:25px;
+}
+.buttons button{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0.5px solid black;
+    transition: all ease-in 0.2s ;
+}
+.buttons button:hover{
+    border: none;
+    background-color: rgb(246, 157, 210);
+}
+.aboutuscontainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:25px;
+}
+.aboutuscontainer h2{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin-top: 60px;
+}
+.section_heading::after{
+    content: '';
+    height: 4px;
+    width: 60px;
+    background-color: purple;
+    display: block;
+    margin: auto;
+}
+.aboutuscontainer div{
+    width:40%;
+    height: fit-content;
+    display:flex;
+}
+.about_text{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+}
+.about_text p{
+    font-size: 1.5rem;
+    word-spacing: 5px;
+}
+.about_img img{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    mix-blend-mode: multiply;
+}
+.menusectioncontainer{
+    background-color: #e3eaea;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    gap:25px;
+    padding-bottom: 20px;
+}
+.menusectioncontainer h2{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin-top: 60px;
+}
+.menusectioncontainer .menu_item{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+.menu_item .menu_img{
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    mix-blend-mode: multiply;
+}
+.menu_item h3{
+    width: 100%;
+    text-align: center;
+    height: fit-content;
+}
+.menu_item p{
+    width: 100%;
+    text-align: center;
+    height: fit-content;
+}
+.whyussectioncontainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.whyussectioncontainer h2{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin-top: 60px;
+}
+.whyussectioncontainer div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+
+}
+.whyussectioncontainer .reasons h3{
+    text-align: center;
+}
+.whyussectioncontainer .reasons p{
+    word-spacing: 10px;
+    line-height: 20px;
+}
+.gallerysectioncontainer{
+    background-color: #e3eaea;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  
+}
+.gallerysectioncontainer .galleryimg{
+    width: 30%;
+    height: 400px;
+    margin-bottom: 25px;
+}
+.gallerysectioncontainer h2{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin-top: 60px;
+}
+.galleryimg img{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    /* mix-blend-mode: multiply; */
+}
+.contactsectioncontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.contactsectioncontainer h2{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin-top: 60px;
+}
+.contactsectioncontainer .contactform{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.contactform input{
+    width: 100%;
+    padding: 10px;
+}
+.contactform input:focus{
+   outline:1px rgb(27, 163, 27) solid
+}
+.contactform textarea:focus{
+   outline:1px rgb(27, 163, 27) solid
+}
+.contactform textarea{
+    width: 100%;
+    padding: 10px;
+    height: 100px;
+}
+.contactform button{
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+}
+.contactsectioncontainer div{
+    width: 40%;
+    margin-left: 25px;
+}
+.contactsectioncontainer div h1{
+    font-size: 5rem;
+    word-spacing: 10px;
+    text-align: center;
+    background: url(images/giphy.webp);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.footersectioncontainer{
+    background-color: #e3eaea;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.footersectioncontainer a{
+    font-size: 2rem;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: initial;
+}
+.footersectioncontainer a:hover{
+    color: white;
+}
+.footersectioncontainer p{
+    margin-bottom: 20px;
+}
