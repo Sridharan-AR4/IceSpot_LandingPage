@@ -128,16 +128,16 @@ a:hover {
 }
 
 .buttons button {
+    background: linear-gradient(pink,skyblue);
     cursor: pointer;
     padding: 10px;
     border-radius: 20px;
-    border: 0.5px solid black;
+    border: none;
     transition: all ease-in 0.2s;
 }
 
 .buttons button:hover {
-    border: none;
-    background-color: rgb(246, 157, 210);
+    border: 1.5px solid black;
 }
 
 .aboutuscontainer {
