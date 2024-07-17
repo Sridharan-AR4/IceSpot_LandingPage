@@ -1,0 +1,56 @@
+@media all and (min-width:900px) {
+    .navigation{
+        flex-direction: row;
+    }
+    .navlist{
+        display: flex;
+        flex-direction: row;
+        margin-right: 30px;
+    }
+    .navigation img{
+        display: none;
+    }
+    .herosectioncontainer{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .textcontainer{
+        margin-left: 20px;
+    }
+    .textcontainer h1{
+        font-size: 5rem;
+    }
+    .textcontainer h3{
+        font-size: 2rem;
+    }
+    .textcontainer {
+        width: 45%;
+    }
+    .imgcontainer{
+        margin-right: 50px;
+        width: 600px;
+        height: 600px;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgcontainer img{
+        width: 600px;
+        height: 600px;
+    }
+    .aboutuscontainer{
+        justify-content: space-between;
+    }
+    .about_text{
+        width: 40%;
+        margin-left: 80px;
+    }
+    .about_text p{
+        word-spacing: 7px;
+        line-height: 30px;
+
+    }
+    .about_img{
+        width: 40%;
+        margin-right: 0;
+    }
+}   
